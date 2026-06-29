@@ -7,9 +7,9 @@ const Hero = () => {
     <section className="relative w-full" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', paddingTop: '80px', zIndex: 10 }}>
       <div className="container w-full">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-          
+
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -20,12 +20,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              <div style={{ 
-                display: 'inline-flex', 
-                alignItems: 'center', 
-                gap: '0.5rem', 
-                padding: '0.5rem 1rem', 
-                background: 'rgba(0, 245, 160, 0.1)', 
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 1rem',
+                background: 'rgba(0, 245, 160, 0.1)',
                 border: '1px solid rgba(0, 245, 160, 0.2)',
                 borderRadius: '50px',
                 marginBottom: '1.5rem'
@@ -39,19 +39,19 @@ const Hero = () => {
                 <span className="text-gradient-mint">Recitation with AI</span>
               </h1>
               <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '500px' }}>
-                The world's first fully on-device Quranic speech recognition platform. Experience real-time pronunciation correction with privacy and zero latency.
+                The world's first fully on-device Quranic speech recognition platform.
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
               style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginTop: '1rem' }}
             >
-              <a 
-                href="https://drive.google.com/uc?export=download&id=1y4AtVWwxHbklMh2Nz1uEQ224SlySX0La" 
-                download="ReciteAI.apk"
+              <a
+                href="https://drive.google.com/uc?export=download&id=1eYQbsSLhvY3g8Lt98PlX5VtSi_1T1UST"
+                download="RecitAI.apk"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -81,13 +81,13 @@ const Hero = () => {
           </motion.div>
 
           {/* Hero Mockup */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8, rotateY: -15 }}
             animate={{ opacity: 1, scale: 1, rotateY: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            style={{ 
-              perspective: '1000px', 
-              display: 'flex', 
+            style={{
+              perspective: '1000px',
+              display: 'flex',
               justifyContent: 'center',
               position: 'relative'
             }}
@@ -105,7 +105,7 @@ const Hero = () => {
               zIndex: 0
             }} />
 
-            <motion.div 
+            <motion.div
               className="glass-card glow-mint"
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -147,11 +147,11 @@ const Hero = () => {
                 </div>
 
                 {/* Main Action Area */}
-                <div style={{ 
-                  flex: 1, 
-                  background: 'rgba(255, 255, 255, 0.03)', 
-                  borderRadius: '24px', 
-                  display: 'flex', 
+                <div style={{
+                  flex: 1,
+                  background: 'rgba(255, 255, 255, 0.03)',
+                  borderRadius: '24px',
+                  display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -159,9 +159,9 @@ const Hero = () => {
                   border: '1px solid rgba(255, 255, 255, 0.05)',
                   marginTop: '1rem'
                 }}>
-                  
-                  <motion.div 
-                    animate={{ 
+
+                  <motion.div
+                    animate={{
                       boxShadow: ['0 0 0 0 rgba(0, 245, 160, 0.4)', '0 0 0 20px rgba(0, 245, 160, 0)'],
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
@@ -183,8 +183,8 @@ const Hero = () => {
                 </div>
 
                 {/* Progress / Stat Card */}
-                <div style={{ 
-                  padding: '1rem', 
+                <div style={{
+                  padding: '1rem',
                   background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.02) 100%)',
                   borderRadius: '20px',
                   border: '1px solid rgba(212, 175, 55, 0.2)',
@@ -195,24 +195,24 @@ const Hero = () => {
                   <div style={{ flex: 1 }}>
                     <p style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>Daily Goal</p>
                     <div style={{ width: '100%', height: '6px', background: 'rgba(255,255,255,0.1)', borderRadius: '3px', overflow: 'hidden' }}>
-                      <motion.div 
+                      <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: '70%' }}
                         transition={{ delay: 1, duration: 1 }}
-                        style={{ height: '100%', background: 'var(--accent-gold)' }} 
+                        style={{ height: '100%', background: 'var(--accent-gold)' }}
                       />
                     </div>
                   </div>
                   <span style={{ fontSize: '0.875rem', fontWeight: 600, color: 'var(--accent-gold)' }}>70%</span>
                 </div>
               </div>
-              
+
               {/* Home Indicator */}
               <div style={{ width: '40%', height: '5px', background: 'var(--text-primary)', borderRadius: '3px', margin: '1rem auto 0', opacity: 0.5 }} />
 
             </motion.div>
           </motion.div>
-          
+
         </div>
       </div>
     </section>
