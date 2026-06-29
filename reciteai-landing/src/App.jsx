@@ -28,8 +28,8 @@ function App() {
             </div>
             <div>
               <a 
-                href="https://drive.google.com/uc?export=download&id=1y4AtVWwxHbklMh2Nz1uEQ224SlySX0La" 
-                download="ReciteAI.apk"
+                href="https://drive.google.com/uc?export=download&id=1eYQbsSLhvY3g8Lt98PlX5VtSi_1T1UST" 
+                download="RecitAI.apk"
                 style={{
                   padding: '0.5rem 1.25rem',
                   background: 'rgba(0, 245, 160, 0.1)',
