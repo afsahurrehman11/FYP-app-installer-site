@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Eye, Zap } from 'lucide-react';
+import { Cpu, Search, Zap, Users, Brain, Target, Activity } from 'lucide-react';
 
 const Features = () => {
   const containerVariants = {
@@ -29,9 +29,9 @@ const Features = () => {
     },
     {
       id: 2,
-      title: "Makharij Articulation Correction",
-      description: "Visual guidance and accurate tracking for correct pronunciation. Pinpoint your articulation areas efficiently.",
-      icon: <Eye size={32} />,
+      title: "Tajweed Explorer",
+      description: "Click and select specific words inside verses to instantly see a comprehensive breakdown of the Tajweed rules applicable to that section.",
+      icon: <Search size={32} />,
       glowColor: "rgba(212, 175, 55, 0.5)",
       borderColor: "rgba(212, 175, 55, 0.2)"
     },
@@ -40,6 +40,38 @@ const Features = () => {
       title: "Instant Feedback Loop",
       description: "Highlighting mistakes in real-time with sequential word-level matching. Green for correct, red for skipped or missed.",
       icon: <Zap size={32} />,
+      glowColor: "rgba(0, 245, 160, 0.5)",
+      borderColor: "rgba(0, 245, 160, 0.2)"
+    },
+    {
+      id: 4,
+      title: "LMS Community Feature",
+      description: "Allows teachers to register, build active communities, assign authentic recitation tasks, grade submissions, and reward certificates with no fake submissions.",
+      icon: <Users size={32} />,
+      glowColor: "rgba(212, 175, 55, 0.5)",
+      borderColor: "rgba(212, 175, 55, 0.2)"
+    },
+    {
+      id: 5,
+      title: "Memorization Mode",
+      description: "Interactive Hifz assistance by dynamically hiding subsequent verses, enabling self-paced memorization and recitation practices.",
+      icon: <Brain size={32} />,
+      glowColor: "rgba(0, 245, 160, 0.5)",
+      borderColor: "rgba(0, 245, 160, 0.2)"
+    },
+    {
+      id: 6,
+      title: "Goal Maker",
+      description: "Create personalized daily/weekly recitation goals, set page milestones, and build a consistent relationship with the Holy Quran.",
+      icon: <Target size={32} />,
+      glowColor: "rgba(212, 175, 55, 0.5)",
+      borderColor: "rgba(212, 175, 55, 0.2)"
+    },
+    {
+      id: 7,
+      title: "Activity Tracker",
+      description: "Track your recitation streaks, log daily active minutes, and visualize detailed analytics of your progress over time.",
+      icon: <Activity size={32} />,
       glowColor: "rgba(0, 245, 160, 0.5)",
       borderColor: "rgba(0, 245, 160, 0.2)"
     }
@@ -119,7 +151,7 @@ const Features = () => {
                   alignItems: 'center', 
                   justifyContent: 'center',
                   marginBottom: '1.5rem',
-                  color: index === 1 ? 'var(--accent-gold)' : 'var(--accent-mint)',
+                  color: index % 2 === 0 ? 'var(--accent-mint)' : 'var(--accent-gold)',
                   border: `1px solid ${feature.borderColor}`
                 }}>
                   {feature.icon}
